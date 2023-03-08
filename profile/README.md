@@ -6,7 +6,12 @@ Why this name: The largest region in the galaxy, also known as the Outer Systems
 
 Repository for all things related to Outer Rim.
 
-## DBMS Mini Project
+## Repositories
+
+- [skywalker](https://github.com/outer-rim/skywalker): Backend repo for DBMS Mini Project
+- [Jade-Jupiter](https://github.com/outer-rim/Jade-Jupiter): Frontend repo for DBMS Mini Project
+
+### DBMS Mini Project
 
 ```mermaid
 sequenceDiagram;
@@ -31,10 +36,10 @@ Jade-Jupiter-->>User: Results;
 deactivate Jade-Jupiter;
 ```
 
-## DBMS Project
+### DBMS Project
 
 Coming soon...
 
-## IR Project
+### IR Project
 
 Coming soon...
