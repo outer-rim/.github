@@ -11,15 +11,6 @@ Repository for all things related to Outer Rim.
 ```mermaid
 sequenceDiagram;
 actor User;
-box Purple Frontend;
-participant Jade-Jupiter;
-end;
-box Blue Backend;
-participant skywalker;
-end;
-box Green Database;
-participant database;
-end;
 User->>Jade-Jupiter: Interaction through forms;
 activate Jade-Jupiter;
 Jade-Jupiter->>skywalker: API request [with Bearer token];
