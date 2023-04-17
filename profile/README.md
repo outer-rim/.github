@@ -10,6 +10,8 @@ Repository for all things related to Outer Rim.
 
 - [skywalker](https://github.com/outer-rim/skywalker): Backend repo for DBMS Mini Project
 - [Jade-Jupiter](https://github.com/outer-rim/Jade-Jupiter): Frontend repo for DBMS Mini Project
+- [Query-Optimizer](https://github.com/outer-rim/Query-Optimiser): Term Project for DBMS
+- [Sciatica](https://github.com/outer-rim/Sciatica): Term Project submission for IR
 
 ### DBMS Mini Project
 
@@ -36,10 +38,27 @@ Jade-Jupiter-->>User: Results;
 deactivate Jade-Jupiter;
 ```
 
-### DBMS Project
+### DBMS Term Project
 
-Coming soon...
+```mermaid
+sequenceDiagram;
+actor User;
+User->>Streamlit-app: Interaction through input text box;
+activate Streamlit-app;
+Streamlit-app->>call.py: Request to spawn child process;
+activate call.py;
 
-### IR Project
+loop execute binary;
+    ./a.out->>./a.out: Feed input and write results to file;
+end;
 
-Coming soon...
+
+./a.out->>call.py: SIGCHLD;
+
+deactivate call.py;
+
+Streamlit-app-->>User: Results from file;
+deactivate Streamlit-app;
+```
+
+### IR Term Project
